@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>laundry-sync privacy policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lede">laundry-sync &middot; last updated 4 October 2026</p>
+
+  <p>laundry-sync is a personal, single-user application. Its only user is its owner, and it
+    processes only the owner&rsquo;s own data.</p>
+
+  <h2>Google account data</h2>
+  <p><strong>Sign-in.</strong> Signing in with Google gives the app the account&rsquo;s stable
+    Google account id and email address. They are stored to recognise the owner, and no other
+    account is let in.</p>
+  <p><strong>Calendar access.</strong> When the owner connects Google Calendar, the app receives
+    an OAuth refresh token, which it stores in its own database. It uses that access only to list
+    the calendars the owner can write to, and to create, update, read and delete the events that
+    represent laundry bookings in the calendar the owner has chosen. It does not read or change
+    any other events.</p>
+
+  <h2>Other data</h2>
+  <p>The app stores the owner&rsquo;s settings (target calendar, reminders, event text) and a
+    mapping from each laundry booking to its calendar event. Credentials for the laundry booking
+    system are supplied as configuration and are not stored in the database.</p>
+
+  <h2>Sharing</h2>
+  <p>No data is sold, shared with third parties, used for advertising, or used to train any
+    model. Data is sent only to Google&rsquo;s Calendar API and to the laundry booking system, as
+    needed for the sync.</p>
+  <p>laundry-sync&rsquo;s use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Retention and removal</h2>
+  <p>Data is kept while the app is in use. The owner can revoke the app&rsquo;s access at any time
+    at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>;
+    the app then discards the stored token the next time it tries to use it. Deleting the
+    app&rsquo;s database removes everything it has stored.</p>
+
+  <h2>Contact</h2>
+  <p>Questions can be raised with the maintainer via
+    <a href="https://github.com/patrikedholm">github.com/patrikedholm</a>.</p>
+
+  <footer><a href="index.html">laundry-sync</a></footer>
+</main>
+</body>
+</html>
